@@ -5,6 +5,7 @@ const port = 3000;
 
 app.use('/books', librarianRouter);
 
+app.disable("x-powered-by");
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
